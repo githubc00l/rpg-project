@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://ccejbhealug1x"]
+[gd_scene load_steps=6 format=4 uid="uid://ccejbhealug1x"]
 
 [ext_resource type="Texture2D" uid="uid://ybpd0lne5ag1" path="res://images/basic tilemap.png" id="1_k8l8t"]
 [ext_resource type="PackedScene" uid="uid://bqkcamefhchph" path="res://player.tscn" id="2_do5h4"]
+[ext_resource type="AudioStream" uid="uid://ctymxbnuhwv0o" path="res://music/k battle2-2.ogg" id="3_trd80"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_do5h4"]
 texture = ExtResource("1_k8l8t")
@@ -223,3 +224,7 @@ position = Vector2(35, 36)
 zoom = Vector2(2.045, 2.045)
 limit_left = 4
 limit_top = 6
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_trd80")
+autoplay = true
