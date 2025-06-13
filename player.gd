@@ -4,12 +4,11 @@ var direction : Vector2 = Vector2.ZERO
 @onready var animation_tree: AnimationTree = $AnimationTree
 
 func _physics_process(_delta):
-	
 	if Input.is_action_pressed("ui_run"):
-		velocity = direction * 150
+		velocity = direction * 180
 		move_and_slide()
 	else:
-		velocity = direction * 75
+		velocity = direction * 100
 		move_and_slide()
 		
 

@@ -542,7 +542,7 @@ shape = SubResource("RectangleShape2D_hqtel")
 texture_filter = 1
 position = Vector2(40, 33)
 sprite_frames = SubResource("SpriteFrames_dw050")
-animation = &"Idle_Up"
+animation = &"Idle_down"
 autoplay = "Idle_down"
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
@@ -560,3 +560,5 @@ root_node = NodePath("../AnimatedSprite2D")
 libraries = {
 &"": SubResource("AnimationLibrary_7lmhl")
 }
+
+[node name="Timer" type="Timer" parent="."]
