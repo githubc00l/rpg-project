@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d0abj0gxslv1t" path="res://images/testguywalk.png" id="3_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(30, 37)
+size = Vector2(29, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
 atlas = ExtResource("2_i3pqv")
@@ -535,15 +535,16 @@ _data = {
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(40, 46.5)
+position = Vector2(39.5, 54)
 shape = SubResource("RectangleShape2D_hqtel")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(40, 33)
 sprite_frames = SubResource("SpriteFrames_dw050")
-animation = &"Idle_Up"
+animation = &"Idle_down"
 autoplay = "Idle_down"
+frame = 2
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 root_node = NodePath("../AnimatedSprite2D")
@@ -552,7 +553,7 @@ advance_expression_base_node = NodePath("../AnimationPlayer")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/idle = false
 parameters/conditions/is_walking = false
-parameters/Idle/blend_position = Vector2(0.0701754, -0.666667)
+parameters/Idle/blend_position = Vector2(-0.0087108, 1.07692)
 parameters/walk/blend_position = Vector2(0.449761, 0.0964912)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
