@@ -544,6 +544,7 @@ position = Vector2(40, 33)
 sprite_frames = SubResource("SpriteFrames_dw050")
 animation = &"Idle_down"
 autoplay = "Idle_down"
+frame = 2
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 root_node = NodePath("../AnimatedSprite2D")
